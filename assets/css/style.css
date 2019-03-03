@@ -1,2 +1,40 @@
-.typing-title {
-  display: none; }
+body, html {
+  height: 100%;
+  width: 100%;
+  position: relative; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cardo', serif;
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase; }
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; }
+  .flex-container h2 {
+    margin: 6rem 0;
+    color: #ffce00;
+    text-align: center; }
+  .flex-container .particles-box {
+    padding: 1rem;
+    position: relative;
+    background-color: #484d5c;
+    flex: 1 1 auto; }
+    .flex-container .particles-box .box-full {
+      flex: 1 1 100%; }
+    .flex-container .particles-box #particles-js {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: auto; }
+    .flex-container .particles-box .typing-title {
+      display: none; }
+
+canvas {
+  display: block;
+  vertical-align: bottom; }

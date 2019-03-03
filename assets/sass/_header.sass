@@ -1,2 +1,29 @@
-.typing-title 
-  display: none;
+.flex-container
+  display: flex
+  flex-wrap: wrap
+  
+  h2
+    margin: 6rem 0
+    color: $headline-color
+    text-align: center
+
+  .particles-box
+    padding: 1rem
+    position: relative
+    background-color: $background-color
+    flex: 1 1 auto
+    & .box-full
+      flex: 1 1 100%
+  
+    #particles-js
+      position: absolute
+      height: 100%
+      width: 100%
+      z-index: auto
+
+    .typing-title
+      display: none;
+
+canvas
+  display: block
+  vertical-align: bottom
