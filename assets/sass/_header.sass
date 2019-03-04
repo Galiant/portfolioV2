@@ -1,16 +1,21 @@
+canvas
+  display: block
+  vertical-align: bottom
+
 .flex-container
   display: flex
   flex-wrap: wrap
   
-  h2
-    margin: 6rem 0
-    color: $headline-color
+  p
+    margin: 4rem 0
+    color: $lightgrey
     text-align: center
+    font-size: 2rem
 
   .particles-box
-    padding: 1rem
+    padding: 1rem 0
     position: relative
-    background-color: $background-color
+    background-color: $black
     flex: 1 1 auto
     & .box-full
       flex: 1 1 100%
@@ -20,10 +25,24 @@
       height: 100%
       width: 100%
       z-index: auto
+      margin: 0
+      padding: 0
 
     .typing-title
       display: none;
 
-canvas
-  display: block
-  vertical-align: bottom
+.header-text
+  color: $white
+  margin-top: 10rem
+  text-align: center
+
+  h1
+    font-size: 6rem
+    weight: 700
+    margin-bottom: .8rem
+    letter-spacing: .5rem
+
+    span
+      display: inline-block
+      padding: .6rem
+      border: .5rem solid rgba($white, .9)
