@@ -13,6 +13,51 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase; }
 
+#menu {
+  position: relative;
+  background-color: #3A3A3A;
+  overflow: hidden;
+  min-width: 21.875em; }
+
+#menu h1 {
+  float: left;
+  color: white; }
+
+#menu-toggle {
+  display: block;
+  float: right;
+  color: white;
+  text-decoration: none;
+  padding: .75em;
+  border: 1px grey solid;
+  margin: 1em 1em 0 0; }
+
+ul {
+  clear: left;
+  list-style-type: none;
+  color: white;
+  padding-left: 0;
+  margin-bottom: 0; }
+
+#toggled {
+  display: none; }
+
+li {
+  padding: 1em 0 1em 1.4em;
+  border-top: 1px grey solid; }
+
+@media screen and (min-width: 41.25em) {
+  #menu-toggle {
+    display: none; }
+  nav {
+    float: right; }
+  ul {
+    display: block !important; }
+  li {
+    float: left;
+    padding: 1em;
+    border-top: none; } }
+
 canvas {
   display: block;
   vertical-align: bottom; }
