@@ -18,10 +18,12 @@ function accordionMenu() {
   var display = menuStyle.getPropertyValue('display');
 
   if (display === 'none') {
-    toggle.style.backgroundColor = "gray";
+    toggle.style.backgroundColor = "white";
+    toggle.style.color = "black";
     menu.style.display = "block";
   } else {
     toggle.style.backgroundColor = "transparent";
+    toggle.style.color = "white";
     menu.style.display = "none";
   };
 };
