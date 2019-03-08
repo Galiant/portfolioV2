@@ -1,5 +1,8 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 body, html {
-  height: 100%;
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -7,46 +10,62 @@ body, html {
 
 body {
   font-family: 'Chivo', sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  height: 100vh; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase; }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh; }
+  section h1 {
+    font-size: 3rem; }
+  section p {
+    font-size: 1.5rem; }
+
 #menu {
   position: relative;
   background-color: #000000;
   overflow: hidden;
-  min-width: 21.875em; }
-
-#menu h1 {
-  float: left;
-  color: white; }
+  min-width: 23rem; }
+  #menu h1 {
+    float: left;
+    color: white; }
+  #menu .logo {
+    padding-left: 2rem; }
 
 #menu-toggle {
   display: block;
   float: right;
   color: white;
   text-decoration: none;
-  padding: .75em;
-  border: 1px grey solid;
-  margin: 1em 1em 0 0; }
+  padding: .75rem;
+  border: 1px #FFFFFF solid;
+  margin: 1rem 1rem 0 0; }
 
 ul {
   clear: left;
   list-style-type: none;
   color: white;
   padding-left: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding: 1rem 0 0 0; }
 
 #toggled {
   display: none; }
 
 li {
   padding: 1rem 0 1rem 1rem;
-  border-top: 1px grey solid; }
+  border-top: 1px #484d5c solid; }
 
-@media screen and (min-width: 41.25em) {
+@media screen and (min-width: 41.25rem) {
   #menu-toggle {
     display: none; }
   nav {
@@ -64,7 +83,9 @@ canvas {
 
 .flex-container {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 100%;
+  height: calc(100vh - 78.875px); }
   .flex-container p {
     margin: 4rem 0;
     color: #c0ccd4;
@@ -89,7 +110,7 @@ canvas {
 
 .header-text {
   color: #FFFFFF;
-  margin-top: 8rem;
+  margin-top: 12rem;
   text-align: center; }
   .header-text h1 {
     font-size: 6rem;

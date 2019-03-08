@@ -2,20 +2,23 @@
   position: relative
   background-color: $black
   overflow: hidden
-  min-width: 21.875em
+  min-width: 23rem
 
-#menu h1 
-  float: left
-  color: white
+  h1 
+    float: left
+    color: white
+
+  .logo
+    padding-left: 2rem
 
 #menu-toggle 
   display: block
   float: right
   color: white
   text-decoration: none
-  padding: .75em
-  border: 1px grey solid
-  margin: 1em 1em 0 0
+  padding: .75rem
+  border: 1px $white solid
+  margin: 1rem 1rem 0 0
 
 ul 
   clear: left
@@ -23,15 +26,16 @@ ul
   color: white
   padding-left: 0
   margin-bottom: 0
+  padding: 1rem 0 0 0
 
 #toggled 
   display: none
 
 li 
   padding: 1rem 0 1rem 1rem
-  border-top: 1px grey solid
+  border-top: 1px $grey solid
 
-@media screen and (min-width: 41.25em) 
+@media screen and (min-width: 41.25rem) 
   #menu-toggle 
     display: none
   
