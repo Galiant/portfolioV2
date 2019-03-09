@@ -31,7 +31,10 @@ section {
     font-size: 1.5rem; }
 
 #menu {
-  position: relative;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
   background-color: #000000;
   overflow: hidden;
   min-width: 23rem; }
@@ -85,12 +88,7 @@ canvas {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: calc(100vh - 78.875px); }
-  .flex-container p {
-    margin: 4rem 0;
-    color: #c0ccd4;
-    text-align: center;
-    font-size: 2rem; }
+  height: 100vh; }
   .flex-container .particles-box {
     padding: 1rem 0;
     position: relative;
@@ -110,7 +108,8 @@ canvas {
 
 .header-text {
   color: #FFFFFF;
-  margin-top: 12rem;
+  position: relative;
+  top: 30%;
   text-align: center; }
   .header-text h1 {
     font-size: 6rem;
@@ -121,3 +120,8 @@ canvas {
       display: inline-block;
       padding: 1.5rem;
       border: 0.5rem solid rgba(255, 255, 255, 0.9); }
+  .header-text p {
+    margin: 4rem 0;
+    color: #c0ccd4;
+    text-align: center;
+    font-size: 2rem; }
