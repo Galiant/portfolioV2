@@ -1,3 +1,17 @@
+/*Smooth scrolling*/
+$('#menu a').on('click', function (e) {
+
+  if (this.hash !== '') {
+    e.preventDefault();
+
+    const target = this.hash;
+
+    $('html, body').animate({
+      scrollTop: $(target).offset().top
+    }, 800);
+  }
+});
+
 // Typed.js
 $('.typed-title').typed({
   stringsElement: $('.typing-title'),
@@ -8,9 +22,9 @@ $('.typed-title').typed({
 
 // Function to change the background color of the menu button and the display value of the menu
 function accordionMenu() {
-  var menu = document.getElementById("toggled");
-  var menuStyle = window.getComputedStyle(menu);
-  var display = menuStyle.getPropertyValue('display');
+  const menu = document.getElementById("toggled");
+  const menuStyle = window.getComputedStyle(menu);
+  const display = menuStyle.getPropertyValue('display');
 
   if (display === 'none') {
     toggle.style.backgroundColor = "white";
@@ -24,5 +38,5 @@ function accordionMenu() {
 };
 
 // Add event listener to menu button
-var toggle = document.getElementById("menu-toggle");
+const toggle = document.getElementById("menu-toggle");
 toggle.addEventListener("click", accordionMenu, false);
