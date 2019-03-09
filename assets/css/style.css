@@ -40,45 +40,56 @@ section {
   min-width: 23rem; }
   #menu h1 {
     float: left;
-    color: white; }
+    color: #FFFFFF; }
   #menu .logo {
     padding-left: 2rem; }
 
 #menu-toggle {
   display: block;
   float: right;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
   padding: .75rem;
   border: 1px #FFFFFF solid;
   margin: 1rem 1rem 0 0; }
 
-ul {
+nav ul {
   clear: left;
   list-style-type: none;
-  color: white;
   padding-left: 0;
   margin-bottom: 0;
   padding: 1rem 0 0 0; }
+  nav ul li {
+    padding: 1rem 0 1rem 1rem;
+    border-top: 1px #484d5c solid; }
+    nav ul li a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 4px; }
+      nav ul li a:hover {
+        color: #ffce00; }
 
 #toggled {
   display: none; }
-
-li {
-  padding: 1rem 0 1rem 1rem;
-  border-top: 1px #484d5c solid; }
 
 @media screen and (min-width: 41.25rem) {
   #menu-toggle {
     display: none; }
   nav {
     float: right; }
-  ul {
-    display: block !important; }
-  li {
-    float: left;
-    padding: 1em;
-    border-top: none; } }
+    nav ul {
+      display: block !important;
+      padding: 1rem 1rem 0 0; }
+      nav ul li {
+        float: left;
+        padding: 1em;
+        border-top: none; }
+        nav ul li a {
+          padding-bottom: .7rem; }
+          nav ul li a:hover {
+            border-bottom: 3px solid #ffce00; } }
 
 canvas {
   display: block;

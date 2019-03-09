@@ -1,8 +1,3 @@
-$('#toggle').click(function () {
-  $(this).toggleClass('active');
-  $('#overlay').toggleClass('open');
-});
-
 // Typed.js
 $('.typed-title').typed({
   stringsElement: $('.typing-title'),
