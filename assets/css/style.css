@@ -35,7 +35,7 @@ section {
   top: 0;
   z-index: 1;
   width: 100%;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.9);
   overflow: hidden;
   min-width: 23rem; }
   #menu h1 {
@@ -51,7 +51,8 @@ section {
   text-decoration: none;
   padding: .75rem;
   border: 1px #FFFFFF solid;
-  margin: 1rem 1rem 0 0; }
+  margin: 1rem 1rem 0 0;
+  cursor: pointer; }
 
 nav ul {
   clear: left;
