@@ -4,8 +4,6 @@
 
 body, html {
   width: 100%;
-  margin: 0px;
-  padding: 0px;
   position: relative; }
 
 body {
@@ -27,8 +25,10 @@ section {
   height: 100vh; }
   section h1 {
     font-size: 3rem; }
+  section h2 {
+    font-size: 2rem; }
   section p {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
 
 #menu {
   position: fixed;
@@ -164,3 +164,21 @@ canvas {
     color: #c0ccd4;
     text-align: center;
     font-size: 2rem; }
+
+#about {
+  background-color: #ffce00; }
+  #about h2 {
+    letter-spacing: 2px; }
+  #about .section-headline {
+    margin-top: .5rem; }
+  #about hr {
+    margin-top: .5rem;
+    width: 7.5%;
+    border: 1px solid #000000; }
+  #about .about-me {
+    text-align: left;
+    margin-top: 2rem;
+    line-height: 2rem;
+    width: 50%; }
+    #about .about-me p {
+      margin-top: 1rem; }
