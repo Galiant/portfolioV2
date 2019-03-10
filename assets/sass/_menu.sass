@@ -7,12 +7,36 @@
   overflow: hidden
   min-width: 23rem
 
-  h1 
-    float: left
-    color: $white
+a
+  color: $white
+  text-decoration: none
+  font-weight: bold
+  text-transform: uppercase
+  letter-spacing: 4px
 
-  .logo
-    padding-left: 2rem
+.logo-container
+  color: $white
+  float: left
+
+  .init
+    color: $black
+    background-color: $yellow
+    padding: 0 .5rem
+    margin-left: 1rem
+    letter-spacing: 1px
+
+  .name
+    display: inline-block
+    vertical-align: top
+    margin-left: .6rem
+    letter-spacing: 4px
+    width: 0
+    overflow: hidden
+    white-space: nowrap
+    transition: width .4s linear
+
+  &:hover .name
+    width: 18rem
 
 #menu-toggle 
   display: block
@@ -35,15 +59,8 @@ nav ul
     padding: 1rem 0 1rem 1rem
     border-top: 1px $grey solid
 
-    a
-      color: $white
-      text-decoration: none
-      font-weight: bold
-      text-transform: uppercase
-      letter-spacing: 4px
-
-      &:hover
-        color: $yellow
+  a:hover
+    color: $yellow
 
 #toggled 
   display: none
@@ -69,3 +86,15 @@ nav ul
 
           &:hover
             border-bottom: 3px solid $yellow
+
+@media screen and (max-width: 41.24rem)
+  #menu  
+    .logo-container
+      &:hover .name
+        width: 14rem
+
+      h1
+        font-size: 1.8rem
+
+      .name
+        margin-left: .2rem
