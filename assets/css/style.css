@@ -110,12 +110,14 @@ nav ul {
             border-bottom: 3px solid #ffce00; } }
 
 @media screen and (max-width: 41.24rem) {
-  #menu .logo-container:hover .name {
-    width: 14rem; }
-  #menu .logo-container h1 {
-    font-size: 1.8rem; }
-  #menu .logo-container .name {
-    margin-left: .2rem; } }
+  #menu .logo-container {
+    padding-top: .4rem; }
+    #menu .logo-container:hover .name {
+      width: 13rem; }
+    #menu .logo-container h1 {
+      font-size: 1.5rem; }
+    #menu .logo-container .name {
+      margin-left: 0; } }
 
 canvas {
   display: block;
