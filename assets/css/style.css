@@ -23,12 +23,18 @@ section {
   text-align: center;
   width: 100%;
   height: 100vh; }
-  section h1 {
-    font-size: 3rem; }
   section h2 {
-    font-size: 2rem; }
+    font-size: 2rem;
+    letter-spacing: 4px; }
+  section .section-headline {
+    margin-top: .5rem; }
+  section hr {
+    margin-top: .5rem;
+    width: 7.5%;
+    border: 1px solid #ffce00; }
   section p {
-    font-size: 1.25rem; }
+    margin-top: 1rem;
+    font-size: 1.5rem; }
 
 #menu {
   position: fixed;
@@ -166,19 +172,9 @@ canvas {
     font-size: 2rem; }
 
 #about {
-  background-color: #ffce00; }
-  #about h2 {
-    letter-spacing: 2px; }
-  #about .section-headline {
-    margin-top: .5rem; }
-  #about hr {
-    margin-top: .5rem;
-    width: 7.5%;
-    border: 1px solid #000000; }
+  background-color: #FFFFFF; }
   #about .about-me {
     text-align: left;
     margin-top: 2rem;
     line-height: 2rem;
     width: 50%; }
-    #about .about-me p {
-      margin-top: 1rem; }
