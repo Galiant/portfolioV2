@@ -64,7 +64,7 @@
 
   <section id="about">
     <h2>About me</h2>
-    <p class="section-headline">Learn more about me!</p>
+    <p class="section-headline">Learn more about me</p>
     <hr>
     <div class="about-me">
       <p>Hello, my name is Antonijo.</p>
@@ -74,14 +74,29 @@
     </div>
   </section>
 
-  <section id="projects">
+  <section id="projects" style="background-color: #fafafa">
     <h1>Projects</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsam eum magnam non pariatur tenetur!</p>
   </section>
 
   <section id="contact">
-    <h1>Contact</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsam eum magnam non pariatur tenetur!</p>
+    <h2>Contact</h2>
+    <p class="section-headline">Get in touch with me</p>
+    <hr>
+    <div class="form-wrapper">
+      <div class="form-div">
+        <form id="form">
+          <div class="input-wrap">
+            <input type="text" name="name" class="feedback-input" placeholder="Name" maxlength="33" required />
+            <input type="email" name="email" class="feedback-input" placeholder="Email" maxlength="99" required />
+          </div>
+          <input type="text" name="subject" class="feedback-input" placeholder="Subject" maxlength="33" required />
+          <textarea name="message" class="feedback-input message" placeholder="Message" maxlength="999" required></textarea>
+          <button type="submit" class="send-button">Let's go!</button>
+        </form>
+      </div>
+    </div>
+    </div>
   </section>
 
   <!-- jQuery -->
