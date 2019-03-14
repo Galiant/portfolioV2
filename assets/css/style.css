@@ -280,3 +280,14 @@ canvas {
     flex-direction: column; }
   .input-wrap .feedback-input:last-child {
     margin-left: 0; } }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: #000000;
+  color: #FFFFFF; }
+  footer > div {
+    padding: 2rem; }
