@@ -227,7 +227,9 @@ canvas {
         #contact .form-wrapper .form-div .feedback-input:focus {
           border-bottom: 2px solid #ffce00;
           background-color: transparent;
-          outline: none; }
+          outline: none;
+          font-weight: normal;
+          letter-spacing: .05rem; }
       #contact .form-wrapper .form-div textarea {
         font-size: 1rem;
         height: 10em;
