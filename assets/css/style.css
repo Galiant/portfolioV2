@@ -59,7 +59,7 @@ a {
     color: #000000;
     background-color: #ffce00;
     padding: 0 .5rem;
-    margin-left: 1rem;
+    margin-left: 1.25rem;
     letter-spacing: 1px; }
   .logo-container .name {
     display: inline-block;
@@ -70,8 +70,9 @@ a {
     overflow: hidden;
     white-space: nowrap;
     transition: width .4s linear; }
-  .logo-container:hover .name {
-    width: 18rem; }
+
+#menu:hover .name {
+  width: 13rem; }
 
 #menu-toggle {
   display: block;
@@ -80,7 +81,7 @@ a {
   text-decoration: none;
   padding: .75rem;
   border: 1px #FFFFFF solid;
-  margin: 1rem 1rem 0 0;
+  margin: 1rem 1rem 1rem 0;
   cursor: pointer; }
 
 nav ul {
@@ -99,6 +100,8 @@ nav ul {
   display: none; }
 
 @media screen and (min-width: 41.25rem) {
+  #menu:hover .name {
+    width: 18rem; }
   #menu-toggle {
     display: none; }
   nav {
@@ -117,11 +120,11 @@ nav ul {
 
 @media screen and (max-width: 41.24rem) {
   #menu .logo-container {
-    padding-top: .4rem; }
+    padding-top: .7rem; }
     #menu .logo-container:hover .name {
       width: 13rem; }
     #menu .logo-container h1 {
-      font-size: 1.5rem; }
+      font-size: 1.35rem; }
     #menu .logo-container .name {
       margin-left: 0; } }
 

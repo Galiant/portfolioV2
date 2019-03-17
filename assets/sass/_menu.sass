@@ -22,7 +22,7 @@ a
     color: $black
     background-color: $yellow
     padding: 0 .5rem
-    margin-left: 1rem
+    margin-left: 1.25rem
     letter-spacing: 1px
 
   .name
@@ -35,8 +35,8 @@ a
     white-space: nowrap
     transition: width .4s linear
 
-  &:hover .name
-    width: 18rem
+#menu:hover .name
+  width: 13rem
 
 #menu-toggle 
   display: block
@@ -45,7 +45,7 @@ a
   text-decoration: none
   padding: .75rem
   border: 1px $white solid
-  margin: 1rem 1rem 0 0
+  margin: 1rem 1rem 1rem 0
   cursor: pointer
 
 nav ul 
@@ -65,7 +65,10 @@ nav ul
 #toggled 
   display: none
 
-@media screen and (min-width: 41.25rem) 
+@media screen and (min-width: 41.25rem)
+  #menu:hover .name
+    width: 18rem
+
   #menu-toggle 
     display: none
 
@@ -90,12 +93,12 @@ nav ul
 @media screen and (max-width: 41.24rem)
   #menu  
     .logo-container
-      padding-top: .4rem
+      padding-top: .7rem
       &:hover .name
         width: 13rem
 
       h1
-        font-size: 1.5rem
+        font-size: 1.35rem
 
       .name
         margin-left: 0
