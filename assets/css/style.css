@@ -171,6 +171,42 @@ canvas {
     text-align: center;
     font-size: 2rem; }
 
+.scroll {
+  height: 54px;
+  width: 33px;
+  background-color: transparent;
+  border: 2px solid #e0e0e0;
+  border-radius: 25px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .scroll__circle {
+    width: 5px;
+    height: 5px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    margin-top: 4px; }
+    .scroll__circle:first-child {
+      animation: in 1s ease infinite; }
+    .scroll__circle:last-child {
+      animation: out 1s ease infinite; }
+
+@keyframes in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1;
+    transform: translateY(8px); } }
+
+@keyframes out {
+  to {
+    opacity: 0;
+    transform: translateY(8px); } }
+
 #about {
   background-color: #FFFFFF; }
   #about .about-me {
