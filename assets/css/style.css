@@ -277,7 +277,7 @@ canvas {
   font-family: 'Chivo', sans-serif;
   text-align: left; }
 
-@media only screen and (max-width: 426px) {
+@media screen and (max-width: 426px) {
   .input-wrap {
     flex-direction: column; }
   .input-wrap .feedback-input:last-child {
@@ -296,7 +296,22 @@ footer {
     padding: 2rem; }
   footer .social {
     display: flex;
-    justify-content: space-around;
-    width: 14rem; }
-  footer .fab:hover {
-    color: #ffce00; }
+    justify-content: flex-end; }
+    footer .social a {
+      font-weight: normal;
+      margin: .3rem; }
+    footer .social .fab:hover {
+      color: #ffce00; }
+
+@media screen and (max-width: 648px) {
+  footer {
+    width: 100%; }
+  footer > div {
+    margin: 0 auto;
+    text-align: center; }
+  .copyright {
+    order: 2;
+    padding-top: 1.5rem; }
+  .social {
+    order: 1;
+    padding-bottom: 0; } }
