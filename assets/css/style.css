@@ -216,6 +216,7 @@ canvas {
     width: 50%; }
 
 #contact {
+  padding-top: 3rem;
   width: 100%;
   display: flex;
   flex-direction: column; }
@@ -228,6 +229,30 @@ canvas {
     align-items: center;
     justify-content: center;
     width: 80%; }
+    #contact .form-wrapper .info {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 50em;
+      padding: 2em; }
+      #contact .form-wrapper .info > div {
+        width: 15rem; }
+      #contact .form-wrapper .info a {
+        color: #000000;
+        text-transform: lowercase;
+        font-weight: normal;
+        letter-spacing: normal; }
+        #contact .form-wrapper .info a:hover {
+          border-bottom: 2px solid #ffce00; }
+      #contact .form-wrapper .info h3 {
+        text-align: left;
+        letter-spacing: .1rem; }
+      #contact .form-wrapper .info p {
+        font-size: 1.2em;
+        text-align: left; }
     #contact .form-wrapper .form-div {
       box-sizing: border-box;
       background-color: transparent;
@@ -235,6 +260,11 @@ canvas {
       padding: 2em;
       max-width: 50em;
       min-height: 25em; }
+      #contact .form-wrapper .form-div h3 {
+        text-align: left;
+        letter-spacing: .1rem; }
+      #contact .form-wrapper .form-div hr {
+        margin-bottom: 1rem; }
       #contact .form-wrapper .form-div .input-wrap {
         box-sizing: border-box;
         width: 100%;
