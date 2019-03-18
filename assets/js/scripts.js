@@ -44,9 +44,7 @@ toggle.addEventListener("click", accordionMenu, false);
 // Modal
 var modal = document.querySelectorAll("#myModal1, #myModal2, #myModal3, #myModal4, #myModal5, #myModal6, #myModal7, #myModal8");
 var link = document.querySelectorAll("#project1, #project2, #project3, #project4, #project5, #project6, #project7, #project8");
-var span = document.getElementsByClassName("closeModal")[0];
-
-var i;
+var span = document.getElementsByClassName("closeModal");
 
 for (var i = 0; i < link.length; i++) {
   link[i].onclick = function () {
@@ -56,8 +54,12 @@ for (var i = 0; i < link.length; i++) {
   }
 }
 
-span.onclick = function () {
-  modal.style.display = "none";
+for (var i = 0; i < span.length; i++) {
+  span[i].onclick = function () {
+    for (var i = 0; i < modal.length; i++) {
+      modal[i].style.display = "none";
+    }
+  }
 }
 
 window.onclick = function (event) {
