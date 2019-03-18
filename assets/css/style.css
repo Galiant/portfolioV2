@@ -224,26 +224,27 @@ canvas {
     font-size: 0;
     width: 80%;
     margin-top: 2.5rem; }
-    #projects .projects a {
+    #projects .projects button {
       display: inline-block;
       width: 25%;
       height: 35vh;
-      position: relative; }
-      #projects .projects a img {
+      position: relative;
+      cursor: pointer; }
+      #projects .projects button img {
         height: 100%;
         width: 100%;
         object-fit: cover;
         background-color: #484d5c; }
-      #projects .projects a:before, #projects .projects a:after {
+      #projects .projects button:before, #projects .projects button:after {
         width: 100%;
         position: absolute;
         opacity: 0;
         transition: acity 0.3s ease; }
-      #projects .projects a:before {
+      #projects .projects button:before {
         content: "";
         height: 100%;
         background: rgba(255, 206, 0, 0.7); }
-      #projects .projects a:after {
+      #projects .projects button:after {
         content: attr(data-title);
         font-size: 24px;
         top: calc(50% - 0.5em);
@@ -251,8 +252,37 @@ canvas {
         text-align: center;
         color: #FFFFFF;
         text-transform: uppercase; }
-      #projects .projects a:hover:before, #projects .projects a:hover:after {
+      #projects .projects button:hover:before, #projects .projects button:hover:after {
         opacity: 1; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.7); }
+  .modal .modal-content {
+    background-color: #fafafa;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; }
+    .modal .modal-content .closeModal {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold; }
+    .modal .modal-content .closeModal:hover,
+    .modal .modal-content .closeModal:focus {
+      color: #000000;
+      text-decoration: none;
+      cursor: pointer; }
 
 @media (max-width: 650px) {
   a {

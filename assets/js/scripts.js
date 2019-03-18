@@ -40,3 +40,32 @@ function accordionMenu() {
 // Add event listener to menu button
 const toggle = document.getElementById("menu-toggle");
 toggle.addEventListener("click", accordionMenu, false);
+
+// Modal
+var modal = document.querySelectorAll("#myModal1, #myModal2, #myModal3, #myModal4, #myModal5, #myModal6, #myModal7, #myModal8");
+var link = document.querySelectorAll("#project1, #project2, #project3, #project4, #project5, #project6, #project7, #project8");
+var span = document.getElementsByClassName("closeModal")[0];
+
+var i;
+
+for (var i = 0; i < link.length; i++) {
+  link[i].onclick = function () {
+    for (var i = 0; i < modal.length; i++) {
+      modal[i].style.display = "block";
+    }
+  }
+}
+
+span.onclick = function () {
+  modal.style.display = "none";
+}
+
+window.onclick = function (event) {
+  for (var i = 0; i < modal.length; i++) {
+    if (event.target == modal[i]) {
+      for (var i = 0; i < modal.length; i++) {
+        modal[i].style.display = "none";
+      }
+    }
+  }
+}
