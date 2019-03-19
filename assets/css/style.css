@@ -121,12 +121,12 @@ nav ul {
 @media screen and (max-width: 41.24rem) {
   #menu .logo-container {
     padding-top: .7rem; }
-    #menu .logo-container:hover .name {
-      width: 13rem; }
-    #menu .logo-container h1 {
-      font-size: 1.35rem; }
-    #menu .logo-container .name {
-      margin-left: 0; } }
+  #menu:hover .name {
+    width: 13rem; }
+  #menu h1 {
+    font-size: 1.35rem; }
+  #menu .name {
+    margin-left: 0; } }
 
 canvas {
   display: block;
@@ -284,14 +284,12 @@ canvas {
       text-decoration: none;
       cursor: pointer; }
 
-@media (max-width: 650px) {
-  a {
-    width: 50%;
-    height: 100vh; } }
+#projects a {
+  width: 50%;
+  height: 100vh; }
 
-@media (max-width: 480px) {
-  a {
-    width: 100%; } }
+#projects a {
+  width: 100%; }
 
 #contact {
   padding-top: 3rem;
