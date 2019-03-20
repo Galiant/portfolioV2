@@ -43,29 +43,27 @@ toggle.addEventListener("click", accordionMenu, false);
 
 // Modal
 var modal = document.querySelectorAll("#myModal1, #myModal2, #myModal3, #myModal4, #myModal5, #myModal6, #myModal7, #myModal8");
-var link = document.querySelectorAll("#project1, #project2, #project3, #project4, #project5, #project6, #project7, #project8");
+
 var span = document.getElementsByClassName("closeModal");
 
-for (var i = 0; i < link.length; i++) {
-  link[i].onclick = function () {
-    for (var i = 0; i < modal.length; i++) {
-      modal[i].style.display = "block";
-    }
-  }
-}
+$("button").click(function () {
+  var modalId = Number($(this).attr("id"));
+  $(".modal").eq(modalId).fadeIn();
+  $(".modal-content").eq(modalId).fadeIn();
+})
 
-for (var i = 0; i < span.length; i++) {
+for (let i = 0; i < span.length; i++) {
   span[i].onclick = function () {
-    for (var i = 0; i < modal.length; i++) {
+    for (let i = 0; i < modal.length; i++) {
       modal[i].style.display = "none";
     }
   }
 }
 
 window.onclick = function (event) {
-  for (var i = 0; i < modal.length; i++) {
+  for (let i = 0; i < modal.length; i++) {
     if (event.target == modal[i]) {
-      for (var i = 0; i < modal.length; i++) {
+      for (let i = 0; i < modal.length; i++) {
         modal[i].style.display = "none";
       }
     }

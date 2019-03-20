@@ -266,7 +266,7 @@ canvas {
   height: 100%;
   overflow: auto;
   background-color: #000000;
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.8); }
   .modal .modal-content {
     background-color: #fafafa;
     margin: auto;
@@ -284,12 +284,15 @@ canvas {
       text-decoration: none;
       cursor: pointer; }
 
-#projects a {
-  width: 50%;
-  height: 100vh; }
+@media (max-width: 650px) {
+  #projects .projects button {
+    width: 50%;
+    height: 50vh; } }
 
-#projects a {
-  width: 100%; }
+@media (max-width: 480px) {
+  #projects .projects button {
+    width: 100%;
+    height: 50vh; } }
 
 #contact {
   padding-top: 3rem;
