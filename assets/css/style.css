@@ -272,7 +272,8 @@ canvas {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; }
+    width: 80%;
+    overflow: hidden; }
     .modal .modal-content .closeModal {
       color: #aaaaaa;
       float: right;
@@ -283,6 +284,26 @@ canvas {
       color: #000000;
       text-decoration: none;
       cursor: pointer; }
+    .modal .modal-content h3 {
+      font-size: 2rem;
+      letter-spacing: 3px; }
+    .modal .modal-content img {
+      height: 400px;
+      width: 400px;
+      background-color: #484d5c;
+      margin: 1rem auto; }
+    .modal .modal-content button {
+      background-color: #4CAF50;
+      border: none;
+      width: 0;
+      height: 0;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 1rem; }
 
 @media (max-width: 650px) {
   #projects .projects button {
