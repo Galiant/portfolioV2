@@ -1,5 +1,6 @@
 #projects
   background-color: $lightgrey
+  padding-top: 2rem
 
   .projects
     font-size: 0
@@ -8,16 +9,16 @@
 
     .btn-project
       display: inline-block
-      width: 25%
-      height: 35vh
+      width: 30%
+      height: 33vh
       position: relative
       cursor: pointer
+      margin: 1%
 
       img
         height: 100%
         width: 100%
         object-fit: cover
-        background-color: $grey
 
       &:before, &:after
         width: 100%
@@ -28,16 +29,18 @@
       &:before
         content: ""
         height: 100%
-        background: rgba($yellow, .7)
+        background: rgba($yellow, .8)
 
       &:after
         content: attr(data-title)
         font-size: 24px
+        font-weight: 700
         top: calc(50% - 0.5em)
         left: 0
         text-align: center
-        color: $white
+        color: $black
         text-transform: uppercase
+        letter-spacing: .15rem
 
       &:hover:before, &:hover:after
         opacity: 1
@@ -56,7 +59,7 @@
   background-color: rgba($black, .8)
 
   .modal-content 
-    background-color: $lightgrey
+    background-color: $white
     margin: auto
     padding: 20px
     border: 1px solid #888
@@ -77,11 +80,11 @@
 
     h3
       font-size: 2rem
-      letter-spacing: 3px
+      letter-spacing: .5rem
 
     img
-      height: 400px
-      width: 400px
+      height: 450px
+      width: 600px
       background-color: $grey
       margin: 1rem auto
 

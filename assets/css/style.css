@@ -219,22 +219,23 @@ canvas {
     width: 50%; }
 
 #projects {
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  padding-top: 2rem; }
   #projects .projects {
     font-size: 0;
     width: 80%;
     margin-top: 2.5rem; }
     #projects .projects .btn-project {
       display: inline-block;
-      width: 25%;
-      height: 35vh;
+      width: 30%;
+      height: 33vh;
       position: relative;
-      cursor: pointer; }
+      cursor: pointer;
+      margin: 1%; }
       #projects .projects .btn-project img {
         height: 100%;
         width: 100%;
-        object-fit: cover;
-        background-color: #484d5c; }
+        object-fit: cover; }
       #projects .projects .btn-project:before, #projects .projects .btn-project:after {
         width: 100%;
         position: absolute;
@@ -243,15 +244,17 @@ canvas {
       #projects .projects .btn-project:before {
         content: "";
         height: 100%;
-        background: rgba(255, 206, 0, 0.7); }
+        background: rgba(255, 206, 0, 0.8); }
       #projects .projects .btn-project:after {
         content: attr(data-title);
         font-size: 24px;
+        font-weight: 700;
         top: calc(50% - 0.5em);
         left: 0;
         text-align: center;
-        color: #FFFFFF;
-        text-transform: uppercase; }
+        color: #000000;
+        text-transform: uppercase;
+        letter-spacing: .15rem; }
       #projects .projects .btn-project:hover:before, #projects .projects .btn-project:hover:after {
         opacity: 1; }
 
@@ -268,7 +271,7 @@ canvas {
   background-color: #000000;
   background-color: rgba(0, 0, 0, 0.8); }
   .modal .modal-content {
-    background-color: #fafafa;
+    background-color: #FFFFFF;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -286,10 +289,10 @@ canvas {
       cursor: pointer; }
     .modal .modal-content h3 {
       font-size: 2rem;
-      letter-spacing: 3px; }
+      letter-spacing: .5rem; }
     .modal .modal-content img {
-      height: 400px;
-      width: 400px;
+      height: 450px;
+      width: 600px;
       background-color: #484d5c;
       margin: 1rem auto; }
     .modal .modal-content .links {
