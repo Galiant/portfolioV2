@@ -280,37 +280,45 @@ canvas {
     .modal .modal-content .closeModal {
       color: #aaaaaa;
       float: right;
-      font-size: 28px;
+      font-size: 2.5rem;
       font-weight: bold; }
     .modal .modal-content .closeModal:hover,
     .modal .modal-content .closeModal:focus {
       color: #000000;
       text-decoration: none;
       cursor: pointer; }
-    .modal .modal-content h3 {
-      font-size: 2rem;
-      letter-spacing: .5rem; }
-    .modal .modal-content img {
-      height: 450px;
-      width: 600px;
-      background-color: #484d5c;
-      margin: 1rem auto; }
-    .modal .modal-content .links {
-      font-size: 1rem;
-      border: 2px solid #000000;
-      cursor: pointer;
-      min-width: 11.5em;
-      letter-spacing: 1px;
-      background-color: transparent;
-      font-family: 'Chivo', sans-serif;
-      padding: 0.75em 0.3em;
-      margin: 2rem;
-      color: #000000;
-      font-weight: 600;
-      outline: none; }
-      .modal .modal-content .links:hover {
+    .modal .modal-content .content {
+      width: 80%;
+      margin: auto; }
+      .modal .modal-content .content h3 {
+        font-size: 2rem;
+        letter-spacing: .5rem;
+        margin-top: 2rem; }
+      .modal .modal-content .content img {
+        height: 450px;
+        width: 600px;
+        background-color: #484d5c;
+        margin: 0 auto; }
+      .modal .modal-content .content p {
+        font-size: 1.25rem;
+        font-weight: 400; }
+      .modal .modal-content .content .links {
+        font-size: 1rem;
+        border: 2px solid #000000;
+        cursor: pointer;
+        min-width: 11.5em;
+        letter-spacing: 1px;
+        background-color: transparent;
+        font-family: 'Chivo', sans-serif;
+        padding: 0.75em 0.3em;
+        margin: 2rem;
         color: #000000;
-        border: 2px solid #ffce00; }
+        font-weight: 600;
+        outline: none; }
+        .modal .modal-content .content .links:hover {
+          color: #000000;
+          border: 2px solid #ffce00;
+          background: #ffce00; }
 
 @media (max-width: 650px) {
   #projects .projects .btn-project {
@@ -428,7 +436,8 @@ canvas {
         justify-content: center; }
         #contact .form-wrapper .form-div .send-button:hover {
           color: #000000;
-          border: 2px solid #ffce00; }
+          border: 2px solid #ffce00;
+          background: #ffce00; }
 
 ::-webkit-input-placeholder {
   color: #000000;

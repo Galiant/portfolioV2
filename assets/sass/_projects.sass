@@ -69,7 +69,7 @@
     .closeModal 
       color: #aaaaaa
       float: right
-      font-size: 28px
+      font-size: 2.5rem
       font-weight: bold
 
     .closeModal:hover,
@@ -78,33 +78,43 @@
       text-decoration: none
       cursor: pointer
 
-    h3
-      font-size: 2rem
-      letter-spacing: .5rem
+    .content
+      width: 80%
+      margin: auto
 
-    img
-      height: 450px
-      width: 600px
-      background-color: $grey
-      margin: 1rem auto
+      h3
+        font-size: 2rem
+        letter-spacing: .5rem
+        margin-top: 2rem
 
-    .links 
-        font-size: 1rem
-        border: 2px solid $black
-        cursor: pointer
-        min-width: 11.5em
-        letter-spacing: 1px
-        background-color: transparent
-        font-family: 'Chivo', sans-serif
-        padding: 0.75em 0.3em
-        margin: 2rem
-        color: $black
-        font-weight: 600
-        outline: none
+      img
+        height: 450px
+        width: 600px
+        background-color: $grey
+        margin: 0 auto
 
-        &:hover 
+      p
+        font-size: 1.25rem
+        font-weight: 400
+
+      .links 
+          font-size: 1rem
+          border: 2px solid $black
+          cursor: pointer
+          min-width: 11.5em
+          letter-spacing: 1px
+          background-color: transparent
+          font-family: 'Chivo', sans-serif
+          padding: 0.75em 0.3em
+          margin: 2rem
           color: $black
-          border: 2px solid $yellow
+          font-weight: 600
+          outline: none
+
+          &:hover 
+            color: $black
+            border: 2px solid $yellow
+            background: $yellow
 
 @media (max-width:650px)
   #projects
