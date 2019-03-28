@@ -262,7 +262,7 @@ canvas {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 4rem;
   left: 0;
   top: 0;
   width: 100%;
@@ -293,12 +293,12 @@ canvas {
       .modal .modal-content .content h3 {
         font-size: 2rem;
         letter-spacing: .5rem;
-        margin-top: 2rem; }
+        margin-top: 1.5rem; }
       .modal .modal-content .content img {
         height: 450px;
         width: 600px;
         background-color: #484d5c;
-        margin: 0 auto; }
+        margin: 1.5rem auto; }
       .modal .modal-content .content p {
         font-size: 1.25rem;
         font-weight: 400; }
