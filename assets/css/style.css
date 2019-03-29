@@ -231,7 +231,8 @@ canvas {
       height: 33vh;
       position: relative;
       cursor: pointer;
-      margin: 1%; }
+      margin: 1%;
+      border: 1px solid transparent; }
       #projects .projects .btn-project img {
         height: 100%;
         width: 100%;
@@ -311,7 +312,7 @@ canvas {
         background-color: transparent;
         font-family: 'Chivo', sans-serif;
         padding: 0.75em 0.3em;
-        margin: 2rem;
+        margin: 1rem;
         color: #000000;
         font-weight: 600;
         outline: none; }
