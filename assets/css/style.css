@@ -36,6 +36,10 @@ section {
     margin-top: 1rem;
     font-size: 1.5rem; }
 
+@media screen and (max-width: 768px) {
+  body, section {
+    height: 100%; } }
+
 #menu {
   position: fixed;
   top: 0;
@@ -99,7 +103,7 @@ nav ul {
 #toggled {
   display: none; }
 
-@media screen and (min-width: 41.25rem) {
+@media screen and (min-width: 48.1rem) {
   #menu:hover .name {
     width: 18rem; }
   #menu-toggle {
@@ -118,7 +122,7 @@ nav ul {
           nav ul li a:hover {
             border-bottom: 3px solid #ffce00; } }
 
-@media screen and (max-width: 41.24rem) {
+@media screen and (max-width: 48rem) {
   #menu .logo-container {
     padding-top: .7rem; }
   #menu:hover .name {
@@ -210,6 +214,17 @@ canvas {
     opacity: 0;
     transform: translateY(8px); } }
 
+@media screen and (max-width: 768px) {
+  .scroll {
+    top: 90vh; }
+  .header-text h1 span {
+    padding: .5rem; } }
+
+@media screen and (max-width: 425px) {
+  .header-text h1 span {
+    padding: .3rem;
+    margin-top: 2rem; } }
+
 #about {
   background-color: #FFFFFF; }
   #about .about-me {
@@ -217,6 +232,12 @@ canvas {
     margin-top: 2rem;
     line-height: 2rem;
     width: 50%; }
+
+@media screen and (max-width: 768px) {
+  #about {
+    padding: 4rem 0; }
+    #about .about-me {
+      width: 80%; } }
 
 #projects {
   background-color: #fafafa;
@@ -263,7 +284,7 @@ canvas {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 6rem;
+  padding-top: 5rem;
   left: 0;
   top: 0;
   width: 100%;
@@ -321,15 +342,34 @@ canvas {
           border: 2px solid #ffce00;
           background: #ffce00; }
 
-@media (max-width: 650px) {
+@media screen and (max-width: 1024px) {
+  .modal {
+    padding-top: 0; } }
+
+@media screen and (max-width: 768px) {
+  #projects {
+    padding-bottom: 3rem; }
+  .modal {
+    padding-top: .5rem; }
+  .modal .modal-content .content img {
+    width: 400px;
+    height: 250px; } }
+
+@media screen and (max-width: 650px) {
   #projects .projects .btn-project {
     width: 50%;
-    height: 50vh; } }
+    height: 50vh; }
+  .modal .modal-content .content img {
+    width: 250px;
+    height: 156px; } }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   #projects .projects .btn-project {
     width: 100%;
-    height: 50vh; } }
+    height: 50vh; }
+  .modal .modal-content .content img {
+    width: 250px;
+    height: 156px; } }
 
 #contact {
   padding-top: 3rem;
@@ -465,6 +505,10 @@ canvas {
     flex-direction: column; }
   .input-wrap .feedback-input:last-child {
     margin-left: 0; } }
+
+@media screen and (max-width: 425px) {
+  .location {
+    margin-top: 2rem; } }
 
 footer {
   display: flex;
