@@ -241,7 +241,32 @@ canvas {
     text-align: left;
     margin-top: 2rem;
     line-height: 2rem;
-    width: 50%; }
+    width: 70%; }
+    #about .about-me p {
+      font-size: 2.5rem;
+      line-height: 2.5rem; }
+    #about .about-me .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      #about .about-me .skills .fa-4x {
+        font-size: 8rem;
+        margin: 0 2.5rem;
+        padding-top: 2.5rem; }
+      #about .about-me .skills .html5-icon {
+        color: #f16529; }
+      #about .about-me .skills .css3-icon {
+        color: #264de4; }
+      #about .about-me .skills .js-icon {
+        color: #f7df1e; }
+      #about .about-me .skills .react-icon {
+        color: #61dbfb; }
+
+@media screen and (max-width: 1220px) {
+  #about .about-me p {
+    font-size: 1.5rem; }
+  #about .about-me .skills .fa-4x {
+    font-size: 6rem; } }
 
 @media screen and (max-width: 768px) {
   #about {
