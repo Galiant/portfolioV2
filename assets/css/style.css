@@ -132,6 +132,16 @@ nav ul {
   #menu .name {
     margin-left: 0; } }
 
+@media screen and (max-width: 24rem) {
+  #menu .logo-container {
+    padding-top: .7rem; }
+  #menu:hover .name {
+    width: 11rem; }
+  #menu h1 {
+    font-size: 1.25rem; }
+  #menu .name {
+    margin-left: 0; } }
+
 canvas {
   display: block;
   vertical-align: bottom; }
